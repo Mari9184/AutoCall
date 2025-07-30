@@ -1,0 +1,114 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f2f6;
+}
+
+.topo {
+  background-color: #2f2536;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  position: relative;
+  z-index: 2;
+ 
+}
+
+.texto-topo {
+  font-family: 'inria-serfin';
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.fundo {
+  background-image: url('Planodefundo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: calc(82vh - 40px); /* altura total menos a faixa do topo */
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 80px; /* espaço do rodapé fixo */
+}
+
+.conteudo {
+   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 310px;
+}
+
+.quadro-foto {
+  border: 5px solid #e0e0e0;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.foto-aluno {
+    margin-bottom: -42px;
+  width: 200px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.dados-aluno {
+  font-family: 'inria-serfin';
+  text-align: left;
+  font-size: 28px;
+  color: #333;
+}
+
+.titulo-dado {
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.info-dado {
+  margin-top: -9px;
+  font-family:'open-sans';
+  font-size: 80px;
+  margin-bottom: 3px;
+  font-weight: normal;
+ 
+}
+
+.rodape-fixo {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centraliza o botão */
+  z-index: 10;
+  pointer-events: none;
+}
+
+.botao-encerrar {
+  font-family: 'inria-serfin';
+  background-color: #2f2536;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.watermark {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  max-width: 40px;
+  pointer-events: none;
+  z-index: 10;
+}

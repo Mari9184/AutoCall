@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'ABC'; 
+  src: url('Font/InriaSerif-Bold.ttf'); 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('imagens/Planodefundo.png');
+  background-size: contain;
+  color: #e9ebef;
+}
+
+header {
+  background-color: #1c1324;
+  text-align: center;
+}
+
+.Nome {
+  width: 150px;
+  margin: 15px;
+}
+
+.titulo {
+  font-family: 'ABC', sans-serif;
+  background-size: contain;
+  font-size: 4rem;
+}
+
+.Data {
+  font-family: 'ABC', sans-serif;
+  color: #e9ebef;
+  background-color: #1c1324;
+  border-radius: 10px;
+  padding: 2rem;
+  
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.Data::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px;
+}
+
+.Turma-botão {
+  font-family: 'ABC', sans-serif;
+  color: #e9ebef;
+  background-color: #1c1324;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.watermark-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+}
+
+.watermark {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  max-width: 50px;
+  pointer-events: none;
+}
+

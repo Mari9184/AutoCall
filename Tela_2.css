@@ -1,0 +1,88 @@
+
+.fundo {
+  background: url('Planodefundo.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.faixa-superior {
+  background-color: #2e203e;
+  color: white;
+  width: 100%;
+  padding: 22px 0;
+}
+
+.conteudo-faixa {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+}
+
+.conteudo-faixa h1 {
+  font-family: 'inria-serif';
+  font-size: 55px;
+  margin: 0;
+ 
+}
+
+.botao-editar {
+  font-family: 'open-sans''regular';
+  font-size: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 7px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.espaco-entre-faixa-e-tabela {
+  height: 30px;
+}
+
+.conteudo-principal {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tabela-container {
+  background-color: white;
+  border-radius: 1px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.tabela-presenca {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-presenca th {
+  background-color: #2e203e;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.tabela-presenca td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+
+.status-presente {
+  color: green;
+}
+
+.status-ausente {
+  color: red;
+}
